@@ -6,6 +6,7 @@ import { Update } from "../libs/update";
 import { Func } from "../core/func";
 
 export class Item extends MyObject3D {
+  private _mesh: THREE.Mesh;
   constructor() {
     super();
 
@@ -18,13 +19,17 @@ export class Item extends MyObject3D {
       },
     });
 
-    const mesh = new THREE.Mesh(geometry, material);
-    mesh.scale.set(Func.instance.sw(), Func.instance.sh(), 1);
-    console.log(mesh.position);
-    this.add(mesh);
+    this._mesh = new THREE.Mesh(geometry, material);
+    this._mesh.scale.set(Func.instance.sw(), Func.instance.sh(), 1);
+    this.add(this._mesh);
   }
 
   protected _update(): void {
     super._update();
+  }
+
+  protected _resize(): void {
+    super._resize();
+    this._mesh.scale.set(Func.instance.sw(), Func.instance.sh(), 1);
   }
 }
