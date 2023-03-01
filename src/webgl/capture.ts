@@ -11,9 +11,6 @@ export class Capture extends Scene {
   private _tgNum: number = 1;
   private _texture: Array<WebGLRenderTarget> = [];
 
-  // --------------------------------
-  // コンストラクタ
-  // --------------------------------
   constructor(num: number = 1) {
     super();
     this._tgNum = num;
