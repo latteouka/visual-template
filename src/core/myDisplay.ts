@@ -32,6 +32,18 @@ export class MyDisplay extends Display {
   }
 
   //
+  public useGPU(el: HTMLElement) {
+    this.css(el, {
+      "will-change": "transform",
+    });
+  }
+
+  //
+  protected _setMakedClass() {
+    this.addClass("-maked");
+  }
+
+  //
   protected _setHover() {
     this._eRollOverHandler = this._eRollOver.bind(this);
     this._eRollOutHandler = this._eRollOut.bind(this);

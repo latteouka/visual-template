@@ -20,11 +20,6 @@
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"
   integrity sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==
 
-"@types/matter-js@^0.17.7":
-  version "0.17.7"
-  resolved "https://registry.yarnpkg.com/@types/matter-js/-/matter-js-0.17.7.tgz#4919813a91fb0424ea8aa4f4c6eaf9b79cf65ff5"
-  integrity sha512-LHx3Kf1vY68wEgSAuQkMShfGxB9YVKtcFYqPTMAcmUCnHuvcPkfnlbveMkH8xG/s1EIYcbBVTnUNDV/CA5B2RA==
-
 "@types/node@^17.0.21":
   version "17.0.45"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.45.tgz#2c0fafd78705e7a18b7906b5201a522719dc5190"
@@ -337,11 +332,6 @@ lil-gui@^0.16.0:
   version "0.16.1"
   resolved "https://registry.yarnpkg.com/lil-gui/-/lil-gui-0.16.1.tgz#fe3a7eb20eea3fa6bc752b8caae96f2a385e8323"
   integrity sha512-6wnnfBvQxJYRhdLyIA+w5b8utwbuVxNmtpTXElm36OSgHa8lyKp00Xz/4AEx3kvodT0AJYgbfadCFWAM0Q8DgQ==
-
-matter-js@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/matter-js/-/matter-js-0.18.0.tgz#083ced04eb6768f7664dc7ca8948a10e46ad3ed6"
-  integrity sha512-/ZVem4WygUnbmo/iE4oHZpZS97btfBtYy5Iwn1396vUZU7YhgVEN8J4UWwfZwY1ZqoTYlPgjvSw9WXauuXL0mg==
 
 nanoid@^3.3.4:
   version "3.3.4"
