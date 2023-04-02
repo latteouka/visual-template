@@ -15,7 +15,7 @@ export class Item extends MyObject3D {
       vertexShader: vertex,
       fragmentShader: fragment,
       uniforms: {
-        uTime: { value: Update.instance.cnt },
+        u_time: { value: Update.instance.elapsed },
       },
     });
 

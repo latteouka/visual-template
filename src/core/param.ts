@@ -15,7 +15,7 @@ export class Param {
   private _stats: any;
 
   public main = {
-    bg: { value: 0x000000, type: "color" },
+    progress: { value: 0, min: 0, max: 1 },
   };
 
   constructor() {
