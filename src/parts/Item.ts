@@ -6,12 +6,13 @@ import { Update } from "../libs/update";
 import { Func } from "../core/func";
 
 export class Item extends MyObject3D {
+  private _material: THREE.ShaderMaterial;
   private _mesh: THREE.Mesh;
   constructor() {
     super();
 
     const geometry = new THREE.PlaneGeometry(1, 1);
-    const material = new THREE.ShaderMaterial({
+    this._material = new THREE.ShaderMaterial({
       vertexShader: vertex,
       fragmentShader: fragment,
       uniforms: {
@@ -19,7 +20,7 @@ export class Item extends MyObject3D {
       },
     });
 
-    this._mesh = new THREE.Mesh(geometry, material);
+    this._mesh = new THREE.Mesh(geometry, this._material);
     this._mesh.scale.set(Func.instance.sw(), Func.instance.sh(), 1);
     this.add(this._mesh);
   }
