@@ -308,4 +308,10 @@ export class Util {
   isIPad(): boolean {
     return device.tablet();
   }
+
+  // custom event can be receive by addEventListener
+  ev(eventName: string, data: any) {
+    const e = new CustomEvent(eventName, { detail: data });
+    window.dispatchEvent(e);
+  }
 }
