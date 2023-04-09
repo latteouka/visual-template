@@ -18,6 +18,7 @@ export class Item extends MyObject3D {
       uniforms: {
         u_time: { value: Update.instance.elapsed },
       },
+      transparent: true,
     });
 
     this._mesh = new THREE.Mesh(geometry, this._material);

@@ -28,6 +28,7 @@ export class Canvas extends MyDisplay {
       antialias: true,
       preserveDrawingBuffer: true,
       powerPreference: "low-power",
+      alpha: true,
     };
 
     // 透過設定
