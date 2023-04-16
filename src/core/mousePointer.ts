@@ -70,15 +70,15 @@ export class MousePointer {
   }
 
   private _eMove(e: any = {}): void {
+    const dx = this.old.x - this.x;
+    const dy = this.old.y - this.y;
+    this.dist = Math.sqrt(dx * dx + dy * dy);
+
     this.old.x = this.x;
     this.old.y = this.y;
 
     this.x = e.clientX;
     this.y = e.clientY;
-
-    const dx = this.old.x - this.x;
-    const dy = this.old.y - this.y;
-    this.dist = Math.sqrt(dx * dx + dy * dy);
   }
 
   private _update(): void {
